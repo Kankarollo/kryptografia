@@ -5,10 +5,30 @@
  */
 package ObsługaPlików;
 
+import java.io.File;
+import java.io.IOException;
+import java.io.PrintWriter;
+
 /**
  *
  * @author Leonard
  */
 public class ZapisPliku {
+    File f;
+    PrintWriter sc;
+    String s = "Ala ma kota.";
+    
+    public void ZapisTest(String path, String tekst) throws IOException
+    {
+        f = new File(path);
+        sc = new PrintWriter(f);
+        sc.println(tekst);
+        sc.close();
+        
+        
+        
+        
+    }
+    
     
 }
