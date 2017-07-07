@@ -5,10 +5,30 @@
  */
 package ObsługaPlików;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+
 /**
  *
  * @author Leonard
  */
 public class OdczytPliku {
+    File f;
+    Scanner sc;
+    char [] kupa;
+    
+    public String tekst(String path) throws FileNotFoundException{
+        f = new File(path);
+        sc = new Scanner(f);
+        String s = new String();
+        String tekstZPliku = new String();
+        while(sc.hasNext()){
+            s = sc.nextLine();
+            tekstZPliku+=s + " ";
+        }
+        sc.close();
+        return tekstZPliku;
+    }
     
 }
