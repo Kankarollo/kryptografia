@@ -7,10 +7,7 @@ package Szyfry;
 
 import java.io.IOException;
 
-/**
- *
- * @author Kanka
- */
+
 public class TescikCezara {
     
     public static void main(String[] args) throws IOException
