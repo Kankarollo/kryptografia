@@ -5,14 +5,25 @@
  */
 package Szyfry;
 
+import ObsługaPlików.ZapisPliku;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 
 
 public class TescikCezara {
     
-    public static void main(String[] args) throws IOException
-    {
-        Cezar c = new Cezar();
-        c.Cezar("C:\\Users\\Kanka\\Desktop\\Paweł\\Programowanie+\\Cezar.txt","C:\\Users\\Kanka\\Desktop\\Paweł\\Programowanie+\\CezarOdk.txt",5);
+    /*
+    Pamietac o dobrym pathie do pliku!
+    */
+    public static void main(String[] args) throws FileNotFoundException, IOException{
+        Cezar xd = new Cezar();
+        xd.setText("C:\\Users\\Kanka\\Desktop\\Paweł\\Programowanie+\\Kryptografia\\Cezar.txt");
+        xd.setKey(3);
+        ZapisPliku zp = new ZapisPliku();
+        zp.ZapisTest("C:\\Users\\Kanka\\Desktop\\Paweł\\Programowanie+\\Kryptografia\\Cezar_Kod.txt",xd.CezarSzyfruj());
+        System.out.println(xd.CezarSzyfruj());
+        xd.setText("C:\\Users\\Kanka\\Desktop\\Paweł\\Programowanie+\\Kryptografia\\Cezar_Kod.txt");
+        System.out.println(xd.CezarDeszyfruj());
+        zp.ZapisTest("C:\\Users\\Kanka\\Desktop\\Paweł\\Programowanie+\\Kryptografia\\Cezar_OdKod.txt",xd.CezarDeszyfruj());
     }
 }
