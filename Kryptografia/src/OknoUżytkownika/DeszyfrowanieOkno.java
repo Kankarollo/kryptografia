@@ -5,10 +5,7 @@
  */
 package OknoUżytkownika;
 
-import java.awt.EventQueue;
 import java.awt.FlowLayout;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
@@ -16,12 +13,12 @@ import javax.swing.JFrame;
  *
  * @author Leonard
  */
-public class SzyfrowanieOkno extends JFrame implements ActionListener{
+public class DeszyfrowanieOkno extends JFrame{
     
     JButton bCezar, bVigenere, bHarcerskie;
     
-    public SzyfrowanieOkno(){
-        super("Szyfrowanie");
+    public DeszyfrowanieOkno(){
+        super("Deszyfrowanie");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocation(50,50);
         setSize(300,100);
@@ -36,17 +33,5 @@ public class SzyfrowanieOkno extends JFrame implements ActionListener{
         
         setVisible(true);
     }
-
-    @Override
-    public void actionPerformed(ActionEvent e) {
-        Object src = e.getSource();
-        if(src == bCezar){
-            EventQueue.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                new SzyfrCezara();
-            }
-            });
-        }
-    }
 }
+

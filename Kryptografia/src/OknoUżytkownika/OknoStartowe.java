@@ -47,11 +47,11 @@ public class OknoStartowe extends JFrame implements ActionListener{
             }
             });
         }
-        else{
+        else {
             EventQueue.invokeLater(new Runnable() {
             @Override
             public void run() {
-                new OknoStartowe();
+                new DeszyfrowanieOkno();
             }
             });
         }
