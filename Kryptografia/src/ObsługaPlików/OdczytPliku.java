@@ -16,7 +16,6 @@ import java.util.Scanner;
 public class OdczytPliku {
     File f;
     Scanner sc;
-    char [] kupa;
     
     public String tekst(String path) throws FileNotFoundException{
         f = new File(path);
