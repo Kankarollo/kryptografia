@@ -6,7 +6,9 @@
 package Szyfry;
 
 import ObsługaPlików.OdczytPliku;
+import ObsługaPlików.ZapisPliku;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 
 /**
  *
@@ -70,4 +72,14 @@ public class SzyfryHarcerskie {
         SzyfrHarcerski = String.valueOf(d);
         return SzyfrHarcerski;
     }           
+    
+    public static void ScoutsHash (String KeyPath, String loadpath, String savepath) throws FileNotFoundException, IOException{
+        SzyfryHarcerskie sc = new SzyfryHarcerskie();
+        sc.setText(loadpath);                       //Wpisać drogę do pliku z tekstem
+        sc.SetCode(KeyPath);                        //Wpisać drogę do pliku z Kodem
+        ZapisPliku zp = new ZapisPliku();
+        zp.ZapisTest(savepath, sc.Szyfracja());
+      
+    
+    }
 }

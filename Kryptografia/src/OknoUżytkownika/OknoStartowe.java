@@ -43,7 +43,8 @@ public class OknoStartowe extends JFrame implements ActionListener{
             EventQueue.invokeLater(new Runnable() {
             @Override
             public void run() {
-                new SzyfrowanieOkno();
+                boolean cipher = true;
+                new SzyfrowanieOkno(cipher);
             }
             });
         }
@@ -51,7 +52,8 @@ public class OknoStartowe extends JFrame implements ActionListener{
             EventQueue.invokeLater(new Runnable() {
             @Override
             public void run() {
-                new DeszyfrowanieOkno();
+                boolean cipher = false;
+                new SzyfrowanieOkno(cipher);
             }
             });
         }

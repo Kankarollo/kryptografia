@@ -48,14 +48,22 @@ public class Cezar {
         key = i;
     }
     
-    /*public static void main(String[] args) throws FileNotFoundException, IOException{
-        Cezar xd = new Cezar();
-        xd.setText("C:\\Users\\Leonard\\Desktop\\plik1.txt");
-        xd.setKey(3);
+    public static void HashCesar(String loadpath, String savepath) throws FileNotFoundException, IOException{
+        Cezar Hash = new Cezar();
+        Hash.setText(loadpath);
+        Hash.setKey(3);
         ZapisPliku zp = new ZapisPliku();
-        zp.ZapisTest("C:\\Users\\Leonard\\Desktop\\plik1.txt", xd.CezarSzyfruj());
-        System.out.println(xd.CezarSzyfruj());
-        xd.setText("C:\\Users\\Leonard\\Desktop\\plik1.txt");
-        System.out.println(xd.CezarDeszyfruj());
-    } to jest testowy main - wszystko bangla jak złoto*/
+        zp.ZapisTest(savepath, Hash.CezarSzyfruj());
+        //System.out.println(Hash.CezarSzyfruj());
+    }// to jest testowy main - wszystko bangla jak złoto
+    
+    public static void CrackCesar(String loadpath, String savepath) throws FileNotFoundException, IOException{
+        Cezar crack = new Cezar();
+        crack.setText(loadpath);
+        crack.setKey(3);
+        ZapisPliku zp = new ZapisPliku();
+        zp.ZapisTest(savepath, crack.CezarDeszyfruj());
+        System.out.println(crack.CezarDeszyfruj());
+        System.out.println();
+    }
 }
