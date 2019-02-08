@@ -5,19 +5,17 @@ Can be easily extended.
 
 
 ------------------------------------------------------------------------------------------------
-POL
+PL
 ------------------------------------------------------------------------------------------------
 -Aplikacja do szyfrowania i deszyfrowania wiadomości za pomocą podstawowych kodów.
 
 -Potrzebna Java do uruchomienia aplikacji
 
 
--Po uruchomieniu wybieramy opcje szyfrowania lub deszyfrowania. Po otworzeniu okienka wybieramy odpowiedni plik (tekstowy), szyfr spośród podanych oraz miejsce zapisu. Do niektórych szyfrów jest potrzebny dodatkowy klucz (Vigenere, Szyfr Harcerski). Przykładowe klucze znajdują się w folderze Notes wewnątrz projektu aplikacji. Po kliknięciu przycisku 'Generate' pojawi nam się plik z naszą zaszyfrowaną wiadomością. UPEWNIĆ SIĘ ŻE PLIK JEST OTWIERANY ZA POMOCĄ PROGRAMU DO EDYCJI PLIKU("Notatnik")!!!
+-Po uruchomieniu wybieramy opcje szyfrowania lub deszyfrowania. Po otworzeniu okienka wybieramy odpowiedni plik (tekstowy), szyfr spośród podanych oraz miejsce zapisu. Do niektórych szyfrów jest potrzebny dodatkowy klucz (Vigenere, Szyfr Harcerski). Przykładowe klucze znajdują się w folderze Notes wewnątrz projektu aplikacji. Po kliknięciu przycisku 'Generate' pojawi nam się plik z naszą zaszyfrowaną wiadomością. 
 
 
--------------------------------------------------------------------------------------------------
-ENG
--------------------------------------------------------------------------------------------------
+
 
 
 
